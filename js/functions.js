@@ -1,13 +1,13 @@
 const lengthTxt = 18;
-const txt = prompt('Проверка на колическтво символов');
+const txt = 'Проверка на колическтво символов';
 
 function isValid (str, lengthStr) {
   return str.length <= lengthStr;
 }
 
-console.log(isValid(txt, lengthTxt));
+isValid(txt, lengthTxt);
 
-function isPolindrome (str) {
+function isPalindrome (str) {
   let newStr = str.toLowerCase();
   str = newStr;
   newStr = str.replaceAll(' ', '');
@@ -20,4 +20,4 @@ function isPolindrome (str) {
   return true;
 }
 
-console.log(isPolindrome(txt));
+isPalindrome(txt);
