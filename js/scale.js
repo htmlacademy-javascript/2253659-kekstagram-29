@@ -14,7 +14,7 @@ const scaleControlSmaller = modal.querySelector('.scale__control--smaller');
 
 const scaleControlBigger = modal.querySelector('.scale__control--bigger');
 
-let currentScaleValue = 100;
+let currentScaleValue = MAX_SCALE_VALUE;
 
 const setPreviewScale = (value) => {
   scaleInput.value = `${value}'%`;
